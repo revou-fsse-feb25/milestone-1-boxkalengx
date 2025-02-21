@@ -1,4 +1,3 @@
-Here's a simple, user-friendly README for the portfolio website:
 
 # Ryan's Portfolio Website
 
@@ -43,8 +42,8 @@ You can easily customize this website by:
 
 ## Contact
 
-If you have questions about this website, contact Ryan at boxkaleng@gmail.com.
+If you have questions about this website, contact Rian at boxkaleng@gmail.com.
 
 ---
 
-© 2025 Ryan Dennys G. All Rights Reserved.
+© 2025 Rian Arif Rahman. All Rights Reserved.
