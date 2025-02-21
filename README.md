@@ -42,8 +42,10 @@ You can easily customize this website by:
 
 ## Contact
 
-If you have questions about this website, contact Rian at boxkaleng@gmail.com.
+If you have questions about this website, contact Rian at boxkaleng@gmail.com
 
+Website Assigment
+https://revou-fsse-feb25.github.io/milestone-1-boxkalengx/
 ---
 
 © 2025 Rian Arif Rahman. All Rights Reserved.
