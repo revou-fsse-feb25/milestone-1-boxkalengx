@@ -4,318 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rian Arif Rahman - Software Engineer</title>
-    <style>
-        /* Global Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'lato', -apple-system, BlinkMacSystemFont, 'lato', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-        
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header & Navigation */
-        .page-header {
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            background-color: rgba(249, 249, 249, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .main-navigation {
-            flex-grow: 1;
-        }
-        
-        .profile-container {
-            margin-left: 20px;
-        }
-        
-        .profile-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #0066cc;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .profile-image:hover {
-            transform: scale(1.05);
-        }
-        
-        .nav-list {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 40px;
-        }
-        
-        .nav-link {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            font-size: 18px;
-            position: relative;
-            transition: color 0.3s;
-        }
-        
-        .nav-link:hover {
-            color: #0066cc;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: #0066cc;
-            transition: width 0.3s;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        /* Hero Section */
-        .hero-section {
-            height: calc(100vh - 100px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 60px 0;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        .main-heading {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            color: #111;
-            font-weight: 700;
-        }
-        
-        .subtitle {
-            display: block;
-            font-weight: 400;
-            font-size: 0.6em;
-            margin-top: 5px;
-        }
-        
-        .hero-description {
-            font-size: 1.2rem;
-            max-width: 700px;
-            color: #555;
-            margin-bottom: 40px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #0066cc;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        
-        .cta-button:hover {
-            background-color: #0052a3;
-            transform: translateY(-2px);
-        }
-        
-        /* Content Sections */
-        .content-section {
-            margin: 60px 0;
-            padding: 40px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s;
-        }
-        
-        .content-section:hover {
-            transform: translateY(-5px);
-        }
-        
-        .section-heading {
-            font-size: 2rem;
-            margin-bottom: 25px;
-            color: #111;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: #0066cc;
-        }
-        
-        .content-list {
-            padding-left: 25px;
-            margin-bottom: 20px;
-        }
-        
-        .content-list-item {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        
-        /* Skills Section */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .skill-badge {
-            padding: 8px 16px;
-            background-color: #f0f7ff;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #0066cc;
-            transition: transform 0.2s;
-        }
-        
-        .skill-badge:hover {
-            transform: scale(1.05);
-        }
-        
-        /* Footer */
-        .page-footer {
-            background-color: #f0f7ff;
-            padding: 50px 40px;
-            border-radius: 8px;
-            margin-top: 80px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-heading {
-            color: #0066cc;
-            margin-bottom: 15px;
-        }
-        
-        .footer-heading::after {
-            background-color: #0066cc;
-            width: 40px;
-        }
-        
-        .footer-text {
-            margin-bottom: 15px;
-        }
-        
-        .footer-link {
-            color: #0066cc;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        
-        .footer-link:hover {
-            color: #0052a3;
-            text-decoration: underline;
-        }
-        
-        .social-list {
-            list-style: none;
-            padding-left: 0;
-            display: flex;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .copyright-text {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9rem;
-            color: #777;
-            text-align: center;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-section {
-                height: auto;
-                padding: 40px 0;
-            }
-            
-            .main-heading {
-                font-size: 2.5rem;
-            }
-            
-            .page-header {
-                flex-wrap: wrap;
-            }
-            
-            .main-navigation {
-                order: 2;
-                width: 100%;
-                margin-top: 15px;
-            }
-            
-            .profile-container {
-                order: 1;
-                margin-left: auto;
-            }
-            
-            .nav-list {
-                gap: 20px;
-            }
-            
-            .content-section {
-                padding: 30px 20px;
-            }
-            
-            .page-footer {
-                padding: 40px 20px;
-            }
-            
-            .social-list {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .main-heading {
-                font-size: 2rem;
-            }
-            
-            .nav-list {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-            
-            .page-header {
-                padding: 20px 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
+
 </head>
 <body>
 
@@ -335,19 +26,11 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1 class="main-heading">Rian Arif Rahman <span class="subtitle">Full Stack Software Engineer</span></h1>
+        <h1 class="main-heading">Hi, I'm <span class="subtitle-mini"> Ryan </span> <span class="subtitle">Full Stack Software Engineer</span></h1>
         <p class="hero-description">
             Still on process to learn about Software engineer <br> 
             Thank you for visiting me today ! <br>
-            <ul class="content-list-item"> <li class="content-list-item">My website supported by AI
-                <p>When you finished review my website.</p>
-                <p> I am start to learn more about function and fundamental of html and css. </p>
-                <p>Thank you very much for allowing me to use AI in the development of this website. Besides that, I will prioritize mastering the fundamental concepts first while using AI as a support in the process. I hope that in the future, I will be even more enthusiastic about learning HTML and CSS and gradually mastering them over time.</p>
-            </li>
-            </ul>
-             
 
-            
         </p>
         <a href="contact.html" class="cta-button">Get in touch</a>
     </section>
@@ -390,16 +73,6 @@
         </div>
     </section>
 
-    <!-- Hobbies Section -->
-    <section class="content-section" aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading" class="section-heading">My Hobbies</h2>
-        <ul class="content-list">
-            <li class="content-list-item">Explore tech world</li>
-            <li class="content-list-item">Random design for recharge my energy</li>
-            <li class="content-list-item">Cooking to help belly needs</li> 
-        </ul>
-    </section>
-
     <!-- Footer Section -->
     <footer class="page-footer">
         <h2 class="footer-heading">Contact Information</h2>
@@ -423,7 +96,7 @@
         </section>
 
         <!-- Copyright -->
-        <p class="copyright-text">&copy; 2025 Ryan Arif Rahman. All Rights Reserved.</p>
+        <p class="copyright-text">&copy; Rian Arif Rahman All Rights Reserved.</p>
     </footer>
 
 </body>
