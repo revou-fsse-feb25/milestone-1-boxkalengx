@@ -5,4 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 </head>
-<body>
+<body backgroundgcolor="#f3f4f6">
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="middle">
+                <table backgroundgcolor="white" width="600" cellpadding="40" cellspacing="0" style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <tr>
+                        <td>
+                            <h1 align="center" style="color: #1f2937; margin-bottom: 32px; font-family: lato, lato, lato;">Contact Me</h1>
+                            
+                            <form action="backend.com" method="POST">
+                                <table width="100%" cellpadding="8" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <label for="name" style="font-family:lato, lato; color: #374151; font-size: 14px;">Name:</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="name" name="visitor" placeholder="Enter your name" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif;" required>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td height="16"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <label for="email" style="font-family: system-ui, -apple-system, sans-serif; color: #374151; font-size: 14px;">Email:</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif;" required>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td height="16"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <label for="concerns" style="font-family: system-ui, -apple-system, sans-serif; color: #374151; font-size: 14px;">Select your concerns:</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="concerns" id="concerns" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif;">
+                                                <option value="hire">Hire me</option>
+                                                <option value="inquiry">Inquiry</option>
+                                                <option value="collaboration">Collaboration</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td height="16"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <label for="inquiry" style="font-family: system-ui, -apple-system, sans-serif; color: #374151; font-size: 14px;">Write your inquiry:</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <textarea name="inquiry" id="inquiry" rows="4" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif; resize: none;" required></textarea>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td height="24"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <table width="100%" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="50%" align="center" style="padding-right: 8px;">
+                                                        <input type="submit" value="Submit" style="width: 100%; padding: 8px 16px; background-color: #4f46e5; color: white; border: none; border-radius: 6px; cursor: pointer; font-family: system-ui, -apple-system, sans-serif;">
+                                                    </td>
+                                                    <td width="50%" align="center" style="padding-left: 8px;">
+                                                        <input type="reset" value="Reset" style="width: 100%; padding: 8px 16px; background-color: #e5e7eb; color: #374151; border: none; border-radius: 6px; cursor: pointer; font-family: system-ui, -apple-system, sans-serif;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
