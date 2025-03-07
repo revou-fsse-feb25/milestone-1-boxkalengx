@@ -7,11 +7,11 @@
 
 body {
     line-height: 1.6;
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
- background-blend-mode: screen;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+background-color: #98D2C0;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+
 }
 
 /* Header & Navigation */
@@ -19,17 +19,20 @@ body {
     padding: 20px 0;
     position: sticky;
     top: 0;
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
- background-blend-mode: screen;
+    background-color: #98D2C0;
     backdrop-filter: blur(10px);
     z-index: 100;
-    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
+.nav-link i{
+    margin-right: 18px;
+}
 .main-navigation {
     flex-grow: 1;
 }
@@ -128,6 +131,16 @@ body {
     margin-bottom: 40px;
 }
 
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+
+
 .cta-button {
     display: inline-block;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -137,11 +150,14 @@ body {
     text-decoration:none;
     font-weight: 1000;
     transition: background-color 0.3s, transform 0.2s;
+    transition: background 0.3s;
+    animation: bounce 0.5s ease-in-out infinite;
 }
 
 .cta-button:hover {
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     transform: translateY(-2px);
+    
 }
 
 /* Content Sections */
@@ -209,16 +225,19 @@ body {
 }
 
 /* Featured Projects */
-
 .grid-1{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 30px;
-        margin-bottom: 60px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    flex-direction: column;
+    justify-items: center;
+    grid-area: auto;
+        
 }
 
 .grid-card {
-    background: #fff;
+    background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
