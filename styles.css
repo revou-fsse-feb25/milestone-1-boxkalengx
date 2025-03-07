@@ -213,10 +213,10 @@ padding: 0 20px;
 
 .skill-badge {
     padding: 8px 16px;
-    background-color: #f0f7ff;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     border-radius: 4px;
     font-size: 0.9rem;
-    color: #0066cc;
+    color: #ffffff;
     transition: transform 0.2s;
 }
 
@@ -237,7 +237,7 @@ padding: 0 20px;
 }
 
 .grid-card {
-    background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
