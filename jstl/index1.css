@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(251, 176, 138);
+}
+
+.game-container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 400px;
+  margin: auto;
+}
+
+.choices button {
+  fot-size: 24px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
