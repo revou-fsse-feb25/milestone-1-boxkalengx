@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
-</head>
-<body backgroundgcolor="white">
-    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
-        <tr>
-            <td align="center" valign="middle">
-                <table backgroundgcolor="white" width="600" cellpadding="40" cellspacing="0" style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <tr>
-                        <td>
-                            <h1 align="center" style="color: #1472f7; margin-bottom: 32px; font-family: lato, lato, lato;">Contact Me</h1>
-                            
-                            <form action="backend.com" method="POST">
-                                <table width="100%" cellpadding="8" cellspacing="0">
-                                    <tr>
-                                        <td>
-                                            <label for="name" style="font-family:lato, lato; color: #374151; font-size: 14px;">Name:</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="text" id="name" name="visitor" placeholder="Enter your name" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif;" required>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td height="16"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>
-                                            <label for="email" style="font-family: system-ui, -apple-system, sans-serif; color: #374151; font-size: 14px;">Email:</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif;" required>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td height="16"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>
-                                            <label for="concerns" style="font-family: system-ui, -apple-system, sans-serif; color: #374151; font-size: 14px;">Select your concerns:</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select name="concerns" id="concerns" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif;">
-                                                <option value="hire">Hire me</option>
-                                                <option value="inquiry">Inquiry</option>
-                                                <option value="collaboration">Collaboration</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td height="16"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>
-                                            <label for="inquiry" style="font-family: system-ui, -apple-system, sans-serif; color: #374151; font-size: 14px;">Write your inquiry:</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <textarea name="inquiry" id="inquiry" rows="4" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-family: system-ui, -apple-system, sans-serif; resize: none;" required></textarea>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td height="24"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>
-                                            <table width="100%" cellpadding="0" cellspacing="0">
-                                                <tr>
-                                                    <td width="50%" align="center" style="padding-right: 8px;">
-                                                        <input type="submit" value="Submit" style="width: 100%; padding: 8px 16px; background-color: #4f46e5; color: white; border: none; border-radius: 6px; cursor: pointer; font-family: system-ui, -apple-system, sans-serif;">
-                                                    </td>
-                                                    <td width="50%" align="center" style="padding-left: 8px;">
-                                                        <input type="reset" value="Reset" style="width: 100%; padding: 8px 16px; background-color: #e5e7eb; color: #374151; border: none; border-radius: 6px; cursor: pointer; font-family: system-ui, -apple-system, sans-serif;">
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</body>
+    <style>
+      body {
+        background-color: white;
+        margin: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      .form-wrapper {
+        max-width: 600px;
+        margin: 5% auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #1472f7;
+        margin-bottom: 32px;
+        font-family: "Lato", sans-serif;
+      }
+
+      label {
+        font-size: 14px;
+        color: #374151;
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        font-family: inherit;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 16px;
+      }
+
+      .button-row input {
+        flex: 1;
+        padding: 10px 16px;
+        font-family: inherit;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+      }
+
+      .button-row input[type="submit"] {
+        background-color: #4f46e5;
+        color: white;
+      }
+
+      .button-row input[type="reset"] {
+        background-color: #e5e7eb;
+        color: #374151;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-wrapper">
+      <h1>Contact Me</h1>
+
+      <form action="https://backend.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="visitor" placeholder="Enter your name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="concerns">Select your concerns:</label>
+        <select name="concerns" id="concerns">
+          <option value="hire">Hire me</option>
+          <option value="inquiry">Inquiry</option>
+          <option value="collaboration">Collaboration</option>
+        </select>
+
+        <label for="inquiry">Write your inquiry:</label>
+        <textarea name="inquiry" id="inquiry" rows="4" required></textarea>
+
+        <div class="button-row">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

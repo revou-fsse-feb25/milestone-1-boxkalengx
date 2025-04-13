@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  background: url(/img/assets/joystick.png);
+  background: url(../js-game/assets/joystick.png);
   display: flex;
   justify-content: center;
   background-size: cover;
@@ -117,7 +117,7 @@ header nav a.active {
 
 .welcome .lets-play {
   border: none;
-  color: #25292d;
+  color: #ffffff;
   padding: 10px;
   border-radius: 20px;
   font-size: 1em;
@@ -125,10 +125,11 @@ header nav a.active {
   margin-top: 15px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .welcome .lets-play:hover {
-  background: #25292d;
+  background: #51db6a;
   color: white;
 }
 
