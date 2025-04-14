@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background: url(/img/assets/scissors.jpg);
+  background: url(../js-game/assets/rumput.jpg);
   display: flex;
   justify-content: center;
   min-height: 100vh;
